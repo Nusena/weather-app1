@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+		/>
+	
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm w-100"
+                id= "search-button"
+              />
+            </div>
+            <div class="col-3">
+              <input
+              type="submit"
+              value="Current"
+              class="form-control btn btn-primary shadow-sm w-100"
+              id= "current-location-button"
+            />
+            </div>
+          </div>
+        </form>   
+        <h1 id="city"></h1>
+        <ul>
+          <li id="date"></li>
+          <li id="description"></li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="temperature" id="temperature"></span
+                ><span class="units">°C |</span>
+                <span class="temperature" id="temperature"></span
+                  ><span class="units">F</span>
+              </div>
+            </div>         
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="week">
+        <div class="row">
+          <div class="col-2">
+              <div class="card" id="Mon">
+            <div>Mon</div>
+            <div>☀️</div>
+            <div>28°</div>
+              </div>
+            </div>  
+          <div class="col-2">
+              <div class="card" id="Tue">
+            <div>Tue</div>
+            <div>🌤️</div>
+            <div>22°</div>
+              </div>
+          </div>
+          <div class="col-2">
+              <div class="card" id="Wed">
+            <div>Wed</div>
+            <div>🌤️</div>
+            <div>26°</div>
+               </div>
+          </div>
+          <div class="col-2">
+              <div class="card" id="Thu">
+            <div>Thu</div>
+            <div>☀️</div>
+            <div>30°</div>
+              </div>
+          </div>
+          <div class="col-2">
+              <div class="card" id="Fri">
+            <div>Fri</div>
+            <div>☀️</div>
+            <div>25°</div>
+              </div>
+          </div>
+          <div class="col-2">
+              <div class="card" id="Sat">
+            <div>Sat</div>
+            <div>☀️</div>
+            <div>25°</div>
+             </div>
+          </div>
+        </div>
+      </div>  
+  </footer>
+    <script src="src/index.js"></script>
+  </body>
+</html>
+
+
+<body>
+	<div id="app"></div>
+
+	<script src="src/index.js">
+	</script>
+</body>
+
+</html>
