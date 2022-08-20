@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap"
+      rel="stylesheet"
+    />
+    <script
+    src="https://kit.fontawesome.com/b498928fba.js"
+    crossorigin="anonymous"
+  ></script>
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -54,13 +65,13 @@
         <h1 id="city"></h1>
         <ul>
           <li id="date"></li>
-          <li id="description"></li>
+          <li id="conditions"></li>
         </ul>
         <div class="row">
           <div class="col-6">
             <div class="clearfix">
                 <div class="float-left">
-                  <span class="temperature" id="current-temp"></span>
+                  <span class="temperature" id="temperature"></span>
                   <span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
                   <a href="#"  id="fahrenheit-link">°F</a></span>
                 </div>
@@ -81,61 +92,16 @@
         </div>
       </div>
     </div>
-    <footer>
-      <div class="week">
-        <div class="row">
-          <div class="col-2">
-              <div class="card" id="Mon">
-            <div>Mon</div>
-            <div>☀️</div>
-            <div>28°</div>
-              </div>
-            </div>  
-          <div class="col-2">
-              <div class="card" id="Tue">
-            <div>Tue</div>
-            <div>🌤️</div>
-            <div>22°</div>
-              </div>
-          </div>
-          <div class="col-2">
-              <div class="card" id="Wed">
-            <div>Wed</div>
-            <div>🌤️</div>
-            <div>26°</div>
-               </div>
-          </div>
-          <div class="col-2">
-              <div class="card" id="Thu">
-            <div>Thu</div>
-            <div>☀️</div>
-            <div>30°</div>
-              </div>
-          </div>
-          <div class="col-2">
-              <div class="card" id="Fri">
-            <div>Fri</div>
-            <div>☀️</div>
-            <div>25°</div>
-              </div>
-          </div>
-          <div class="col-2">
-              <div class="card" id="Sat">
-            <div>Sat</div>
-            <div>☀️</div>
-            <div>25°</div>
-             </div>
-          </div>
-        </div>
-      </div>  
-  </footer>
-      <foot>
-        <a
-          href="https://github.com/Nusena/weather-app1"
-          target="_blank"
-          >Open-source code</a>
-          by Anna Karaman
-     </foot>
+    <div class="weather-forecast" id="forecast"></div>
+  </div>
+  <foot>
+    <a
+      href="https://github.com/Nusena/weather-app1"
+      target="_blank"
+      >Open-source code</a
+    >
+    by Anna Karaman
+  </foot>
     <script src="index.js"></script>
   </body>
 </html>
