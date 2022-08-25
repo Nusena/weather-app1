@@ -73,6 +73,8 @@ function getForecast(coordinates) {
 }
 
 function showTemperature(responce) {
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   let tempElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let conditionElement = document.querySelector("#conditions");
